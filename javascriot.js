@@ -50,7 +50,6 @@ function sendInquiry() {
     }, 2000);
 }
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -60,7 +59,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Show or hide the back to top button based on scroll position
 window.addEventListener('scroll', function () {
     const backToTopButton = document.getElementById('backToTop');
     if (window.scrollY > 200) {
@@ -70,7 +68,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Scroll to the top when the button is clicked
 document.getElementById('backToTop').addEventListener('click', function () {
     window.scrollTo({
         top: 0,
